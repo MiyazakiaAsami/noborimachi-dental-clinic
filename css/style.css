@@ -1,0 +1,285 @@
+@charset "utf-8" ;
+
+/*---共通設定----*/
+
+html {
+    font-size: 100%;    
+}
+
+body {
+    font-size: 17px;
+    line-height: 1.7;
+    font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+img {
+     max-width: 100%;
+}
+  
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color:#87cefa;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+.sec-title {
+    border-bottom: solid 2px #FF7BAC;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+/*---header----*/
+
+.logo {
+    width: 350px;
+    margin:10px 10px 0 10px;
+}
+
+.gnav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.gnav-item {
+    display: inline-block;
+    font-size: 20px;
+    width: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+li + li {
+    border-left: 1px solid #333;
+  }
+
+.gnav-link {
+    color: #333333;
+}
+
+/*---news----*/
+#news {
+    width: 600px;
+    height: 100px;
+    border: 1px solid #333;
+    padding: 10px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.post {
+    display: flex;
+}
+
+.post-info {
+    margin-left: 1rem;
+}
+
+.view {
+    text-align: right;
+}
+
+.info-link {
+    text-decoration:underline dotted;
+}
+
+@media screen and (max-width: 768px) {
+    #news {
+        width: 95%;
+    }
+}
+
+/*---about----*/
+.flex-box {
+    display: flex;
+}
+
+.about-text {
+    margin-left: 1rem;
+    line-height: 1.75;
+}
+
+.dryamada {
+    width: 400px;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .flex-box {
+        display: block;
+    }
+
+    .dryamada {
+        width: 200px;
+        display: block;
+        text-align: center;
+    }
+
+    .drname {
+        border-bottom: solid 1px #F8C89C;
+        display: inline-block;
+        font-size: 13px;
+    }
+}
+
+/*---introduction----*/
+.intro-item {
+    width: 31%;
+}
+ 
+.intro-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro-title {
+    font-size: 21px;
+    display: block;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .intro-item {
+        width: 49%;
+        margin-bottom: 20px;
+    }
+
+    .intro-box {
+        flex-wrap: wrap;
+    }
+
+    .intro-title {
+        font-weight: bold;
+        font-size: 16px;
+    }
+}
+
+/*---footer----*/
+
+footer {
+    margin-top: 50px;
+    background-color: #FFF1EB;
+    padding: 5%;
+    position: relative;
+}
+.fotter-logo {
+    width: 350px;
+}
+
+address {
+    font-style:normal;
+}
+
+.hours {
+    width: 500px;
+}
+
+.phone-box {
+    display: flex;
+}
+
+.phone-number {
+    text-decoration: none;
+    color: #333;
+    font-size: 30px;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.reserve {
+    display: inline-block;
+}
+
+iframe {
+    width: 98%;
+    height: 98%;
+}
+
+@media(min-width: 768px){
+    a[href^="tel:"]{
+      pointer-events: none;
+    }
+  }
+
+.reserve-box {
+    display: flex;
+    align-items: center;
+}
+
+.phone-icon {
+    width: 40px;
+    margin-right: 3px;
+}
+
+.info-big-box {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.info-box {
+    width: 48%;
+    margin: 2px;
+}
+
+
+small {
+    display: block;
+    text-align: right;
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+}
+@media screen and (max-width: 1150px) {
+    .reserve-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .phone-box {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .info-box {
+        width: 98%;
+        margin: 2px;
+    }
+
+    .reserve-box {
+        display: block;
+    }
+
+    .info-big-box {
+        flex-direction: column;
+        justify-content: space-between;    
+    }
+
+    iframe {
+        height: 500px;
+    }
+
+}

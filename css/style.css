@@ -30,6 +30,7 @@ img {
 
 a {
     text-decoration: none;
+    color: #333333;
 }
 
 a:hover {
@@ -47,6 +48,8 @@ ol {
     margin-bottom: 10px;
     display: inline-block;
 }
+
+
 
 /*---header----*/
 
@@ -78,6 +81,170 @@ li + li {
     color: #333333;
 }
 
+/*---ハンバーガーメニュー----*/
+/*------------------------------------
+ヘッダー a hover:下線アンダーライン ↓
+------------------------------------*/
+.gnav-sp-link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+.gnav-sp-link::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 3px;
+  background: #FF7BAC;
+  transform: scale(0, 1);
+  transform-origin: right top;
+  transition: transform .3s;
+}
+.gnav-sp-link:hover {
+  color: gray;
+}
+header ul li a:hover::after {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+/*------------------------------------
+ヘッダー pcハンバーガーメニュー ↓
+------------------------------------*/
+/*header {
+  font-weight: 700;
+}
+header .pc_nav {
+  margin: auto;
+  width: 80%;
+  padding-top: 40px;
+}
+header .pc_nav div .crumbs ul li {
+  margin-right: 40px;
+}
+header .pc_nav div .crumbs ul li:last-of-type {
+  margin-right: 0;
+}
+*/
+/*------------------------------------
+ヘッダー spハンバーガーメニュー ↓
+------------------------------------*/
+header .sp_nav {
+  text-align: center;
+}
+.sidemenu {
+  height: 100vh;
+  padding-top: 100px;
+  position: fixed;
+  right: -40%; /*メニュー幅*/
+  transition: all 0.6s;
+  top: 0;
+  width: 40%; /*メニュー幅*/
+  z-index: 2;
+  background-color: #fff;
+}
+.sidemenu nav ul li {
+  padding: 20px;
+}
+.hamburger {
+  cursor: pointer;
+  height: 60px;
+  position: absolute;
+  right: 10px;
+  top: 1px;
+  width: 60px;
+  z-index: 3;
+}
+.hamburger span {
+  background-color: #333333;
+  height: 4px;
+  left: 15px;
+  position: absolute;
+  transition: all 0.6s;
+  width: 30px;
+}
+.hamburger_linetop {
+  top: 20px;
+}
+.hamburger_linecenter {
+  top: 29px;
+}
+.hamburger_linebottom {
+  top: 38px;
+}
+/*------------------------------------
+メニュークリックした後 ↓
+------------------------------------*/
+.nav_open .sidemenu {
+  right: 0;
+}
+.nav_open .hamburger_linetop {
+  top: 26px;
+  transform: rotate(45deg);
+}
+.nav_open .hamburger_linecenter {
+  left: 50%;
+  width: 0;
+}
+.nav_open .hamburger_linebottom {
+  top: 26px;
+  transform: rotate(-45deg);
+}
+.nav_open .overlay {
+  opacity: 0.8;
+  visibility: visible;
+}
+/*------------------------------------
+メニュークリック後メニュー外の背景 ↓
+------------------------------------*/
+.overlay {
+  background-color: #000;
+  cursor: pointer;
+  height: 100vh;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  transition: all 0.6s;
+  visibility: hidden;
+  width: 100vw;
+  z-index: 1;
+}
+/*------------------------------------
+@media screen 1000px~999px ↓
+------------------------------------*/
+
+.sp_nav {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+.gnav-list {
+    display: none;
+}
+    .sp_nav {
+    display: inline;
+}
+.logo {
+    width: 60%;
+}
+}
+
+@media screen and (max-width: 1000px) {
+  .sp_no {
+    display: none;
+  }
+  .sidemenu {
+    right: -50%; /*メニュー幅*/
+    width: 50%; /*メニュー幅*/
+  }
+}
+@media screen and (min-width: 999px) {
+  .pc_no {
+    display: none;
+  }
+}
 /*---news----*/
 #news {
     width: 600px;

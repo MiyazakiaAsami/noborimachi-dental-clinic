@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex" />
     <title>のぼりまち歯科 | 広島市中区幟町駅より徒歩3分</title>
     <meta name="discription" content="広島市中区幟町駅より徒歩3分。お子さまからお年寄りまで安心して通っていただける地域の「かかりつけ医」">
 
@@ -12,7 +13,6 @@
     <link rel="stylesheet" href="css/slide.css">
     <link rel="stylesheet" href="css/style.css">
 
-    
     <!-- ファビコン -->
     <link rel="icon" href="icon.svg">
 
@@ -22,15 +22,15 @@
 
 <body>
 
+   
     <header>
         <nav class="gnav">
 
         <div class="top-icon">
-            <a href="index.html"><img class="logo" src="imgs/logo3.png
-                " alt="のぼりまち歯科"></a>
-        </div>
+            <h1><a href="index.html"><img class="logo" src="imgs/logo3.png
+                " alt="のぼりまち歯科"></a></h1>
+        </div>        
 
-        <!-- ハンバーガーボタン https://web-de-asobo.net/2022/06/22/hamburger-menu/-->
             <ul class="gnav-list">
                 <li class="gnav-item"><a class="gnav-link" href="#">ホーム</a></li>
                 <li class="gnav-item"><a class="gnav-link" href="#news">お知らせ</a></li>
@@ -40,6 +40,27 @@
             </ul>            
         </nav>
 
+        <!-- spハンバーガーメニュー ↓ -->
+        <div class="sp_nav">
+            <div class="overlay" id="js_overlay"></div>
+            <div class="hamburger" id="js_hamburger">
+            <span class="hamburger_linetop"></span>
+            <span class="hamburger_linecenter"></span>
+            <span class="hamburger_linebottom"></span>
+            </div>
+            <div class="sidemenu">
+            <nav>
+                <ul>
+                <li><a class="gnav-sp-link" href="">ホーム</a></li>
+                <li><a class="gnav-sp-link" href="">お知らせ</a></li>
+                <li><a class="gnav-sp-link" href="">院長挨拶</a></li>
+                <li><a class="gnav-sp-link" href="">医院紹介</a></li>
+                <li><a class="gnav-sp-link" href="">アクセス</a></li>
+                </ul>
+            </nav>
+            </div>
+        </div>
+        <!-- spハンバーガーメニュー ↑ -->
     </header>
 
     <main class="wrapper">

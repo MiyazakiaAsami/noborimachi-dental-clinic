@@ -109,27 +109,7 @@ header ul li a:hover::after {
   transform-origin: left top;
   transform: scale(1, 1);
 }
-/*------------------------------------
-ヘッダー pcハンバーガーメニュー ↓
-------------------------------------*/
-/*header {
-  font-weight: 700;
-}
-header .pc_nav {
-  margin: auto;
-  width: 80%;
-  padding-top: 40px;
-}
-header .pc_nav div .crumbs ul li {
-  margin-right: 40px;
-}
-header .pc_nav div .crumbs ul li:last-of-type {
-  margin-right: 0;
-}
-*/
-/*------------------------------------
-ヘッダー spハンバーガーメニュー ↓
-------------------------------------*/
+
 header .sp_nav {
   text-align: center;
 }
@@ -212,11 +192,30 @@ header .sp_nav {
   z-index: 1;
 }
 /*------------------------------------
-@media screen 1000px~999px ↓
+@media screen 
 ------------------------------------*/
 
 .sp_nav {
     display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .gnav {
+    padding: 0 30px;
+  }
+
+  .top-icon {
+    width: 40%;
+  }
+
+  .gnav-item {
+    font-size: 17px;
+    width: 80px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
 }
 
 @media screen and (max-width: 768px) {
@@ -226,25 +225,21 @@ header .sp_nav {
     .sp_nav {
     display: inline;
 }
+.top-icon {
+  width: 70%;
+  margin:5px 5px 0 5px;
+}
+
 .logo {
-    width: 60%;
+  margin: 0;
+}
+
+.gnav {
+  padding: 0 5px;
 }
 }
 
-@media screen and (max-width: 1000px) {
-  .sp_no {
-    display: none;
-  }
-  .sidemenu {
-    right: -50%; /*メニュー幅*/
-    width: 50%; /*メニュー幅*/
-  }
-}
-@media screen and (min-width: 999px) {
-  .pc_no {
-    display: none;
-  }
-}
+
 /*---news----*/
 #news {
     width: 600px;

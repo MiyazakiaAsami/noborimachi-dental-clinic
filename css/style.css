@@ -128,30 +128,41 @@ header .sp_nav {
   padding: 20px;
 }
 .hamburger {
+    background: #FF7BAC;
   cursor: pointer;
-  height: 60px;
+  height: 47px;
   position: absolute;
   right: 10px;
-  top: 1px;
-  width: 60px;
+  top: 8px;
+  width: 47px;
   z-index: 3;
+  text-align: center;
 }
-.hamburger span {
-  background-color: #333333;
+.hamburger span:nth-child(1),
+.hamburger span:nth-child(2)
+{
+  background-color: #fff;
   height: 4px;
-  left: 15px;
+  left: 9px;
   position: absolute;
   transition: all 0.6s;
   width: 30px;
 }
 .hamburger_linetop {
-  top: 20px;
+  top: 10px;
 }
 .hamburger_linecenter {
-  top: 29px;
+  top: 20px;
 }
 .hamburger_linebottom {
-  top: 38px;
+    color: #fff;
+  top: 26px;
+  font-size: 6px;
+  height: 3px;
+  left: 9px;
+  position: absolute;
+  transition: all 0.6s;
+  width: 30px;
 }
 /*------------------------------------
 メニュークリックした後 ↓
@@ -160,16 +171,22 @@ header .sp_nav {
   right: 0;
 }
 .nav_open .hamburger_linetop {
-  top: 26px;
+  top: 14px;
   transform: rotate(45deg);
 }
 .nav_open .hamburger_linecenter {
-  left: 50%;
-  width: 0;
+    top: 14px;
+    transform: rotate(-45deg);
 }
-.nav_open .hamburger_linebottom {
-  top: 26px;
-  transform: rotate(-45deg);
+
+.nav_open .hamburger_linebottom{
+    font-size: 0;
+}
+
+.nav_open .hamburger_linebottom::before{
+    top: 26px;
+    font-size: 6px;
+    content: "CLOSE";
 }
 .nav_open .overlay {
   opacity: 0.8;

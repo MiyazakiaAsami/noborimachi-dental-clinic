@@ -49,8 +49,6 @@ ol {
     display: inline-block;
 }
 
-
-
 /*---header----*/
 
 .logo {
@@ -161,7 +159,6 @@ header .sp_nav {
   height: 3px;
   left: 9px;
   position: absolute;
-  transition: all 0.6s;
   width: 30px;
 }
 /*------------------------------------
@@ -258,13 +255,17 @@ header .sp_nav {
 
 
 /*---news----*/
-#news {
+.news-title{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 20px;
+} 
+
+.news-wrapper {
     width: 600px;
     height: 100px;
     border: 1px solid #333;
     padding: 10px;
-    margin-top: 60px;
-    margin-bottom: 60px;
 }
 
 .post {
@@ -284,7 +285,7 @@ header .sp_nav {
 }
 
 @media screen and (max-width: 768px) {
-    #news {
+    .news-wrapper {
         width: 95%;
     }
 }

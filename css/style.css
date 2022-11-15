@@ -259,13 +259,20 @@ header .sp_nav {
     margin-top: 2px;
     margin-bottom: 2px;
     font-size: 20px;
+    margin: 0 auto;
 } 
 
 .news-wrapper {
     width: 600px;
+    margin: 0 auto;
+}
+
+.news-container {
+    width: 600px;
     height: 100px;
     border: 1px solid #333;
     padding: 10px;
+    margin: 0 auto;
 }
 
 .post {
@@ -287,6 +294,16 @@ header .sp_nav {
 @media screen and (max-width: 768px) {
     .news-wrapper {
         width: 95%;
+    }
+    
+    .news-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .news-container {
+        height: 100%;
     }
 }
 

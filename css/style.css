@@ -144,7 +144,7 @@ header .sp_nav {
   left: 9px;
   position: absolute;
   transition: all 0.6s;
-  width: 30px;
+  width: 40px;
 }
 .hamburger_linetop {
   top: 10px;
@@ -159,7 +159,7 @@ header .sp_nav {
   height: 3px;
   left: 9px;
   position: absolute;
-  width: 30px;
+  width: 40px;
 }
 /*------------------------------------
 メニュークリックした後 ↓

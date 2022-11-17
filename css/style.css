@@ -126,7 +126,7 @@ header .sp_nav {
   padding: 20px;
 }
 .hamburger {
-    background: #FF7BAC;
+  background: #FF7BAC;
   cursor: pointer;
   height: 47px;
   position: absolute;
@@ -141,7 +141,7 @@ header .sp_nav {
 {
   background-color: #fff;
   height: 4px;
-  left: 9px;
+  left: 5px;
   position: absolute;
   transition: all 0.6s;
   width: 40px;
@@ -157,7 +157,7 @@ header .sp_nav {
   top: 26px;
   font-size: 10px;
   height: 3px;
-  left: 9px;
+  left: 5px;
   position: absolute;
   width: 40px;
 }
@@ -181,8 +181,8 @@ header .sp_nav {
 }
 
 .nav_open .hamburger_linebottom::before{
-    top: 26px;
-    font-size: 6px;
+    top: 28px;
+    font-size: 10px;
     content: "CLOSE";
 }
 .nav_open .overlay {
